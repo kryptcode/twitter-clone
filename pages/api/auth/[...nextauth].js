@@ -16,7 +16,6 @@ export default NextAuth({
 
           return session
       }
-
-
-  }
+  },
+  secret: process.env.JWT_SECRET,
 })
